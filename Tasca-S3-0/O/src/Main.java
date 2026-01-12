@@ -1,4 +1,4 @@
-public class InstrumentPlayer {
+public class Main {
     public void play(String instrument) {
         if ("guitar".equals(instrument)) {
             System.out.println("🎸 Strumming the guitar");
@@ -12,7 +12,7 @@ public class InstrumentPlayer {
     }
 
     public static void main(String[] args) {
-        InstrumentPlayer player = new InstrumentPlayer();
+        Main player = new Main();
         player.play("guitar");
         player.play("drums");
         player.play("piano");
