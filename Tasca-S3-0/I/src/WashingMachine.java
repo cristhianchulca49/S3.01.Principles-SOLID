@@ -1,4 +1,4 @@
-public class WashingMachine implements MachineActions {
+public class WashingMachine implements Switchable, Wash {
 
     @Override
     public void turnOn() {
@@ -11,17 +11,8 @@ public class WashingMachine implements MachineActions {
     }
 
     @Override
-    public void heat() {
-        System.out.println("Heat operation does not apply to WashingMachine.");
-    }
-
-    @Override
-    public void cool() {
-        System.out.println("Cool operation does not apply to WashingMachine.");
-    }
-
-    @Override
     public void wash() {
         System.out.println("WashingMachine is washing clothes.");
     }
+
 }
