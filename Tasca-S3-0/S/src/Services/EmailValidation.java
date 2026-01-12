@@ -1,5 +1,8 @@
-public class EmailValidation {
+package Services;
 
+import Model.User;
+
+public class EmailValidation {
     public void validation(User user) {
         if (user.email() == null || !user.email().contains("@") || !user.email().contains(".")) {
             throw new IllegalArgumentException("Invalid email address.");
