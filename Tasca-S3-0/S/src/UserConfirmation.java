@@ -1,0 +1,2 @@
+public class UserConfirmation {
+}
