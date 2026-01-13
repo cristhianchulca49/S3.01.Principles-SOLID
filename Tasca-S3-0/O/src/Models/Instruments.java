@@ -1,4 +1,5 @@
 package Models;
 
-public abstract class Instruments implements Play {
+public abstract class Instruments {
+    public void playInstrument(){}
 }

@@ -10,6 +10,6 @@ public class Main {
                 new Piano()
         );
 
-        instruments.forEach(Play::playInstrument);
+        instruments.forEach(Instruments::playInstrument);
     }
 }
