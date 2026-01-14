@@ -1,9 +1,19 @@
 public class Character {
+    private Damage damageBehavior;
+
+    public Character(Damage damageBehavior) {
+        this.damageBehavior = damageBehavior;
+    }
+
     public void attack() {
         System.out.println("The character attacks with a weapon.");
     }
 
     public void takeDamage(int points) {
-        System.out.println("The character takes " + points + " points of damage.");
+        damageBehavior.takeDamage(points);
+    }
+
+    public void setDamageBehavior(Damage damageBehavior) {
+        this.damageBehavior = damageBehavior;
     }
 }
